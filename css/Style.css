@@ -354,7 +354,7 @@ footer a{
 }
 
 /*===== Resposive =====*/
-/* 
+
 @media screen and (max-width: 1280px){
     #home .container .icons ion-icon{
         font-size: 1.5rem;
@@ -499,4 +499,4 @@ footer a{
         width: 60%;
         height: 60%;
     }
-} */
+}
