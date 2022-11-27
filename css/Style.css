@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body{
     width: 100%;
@@ -69,12 +70,14 @@ header .btn-mobile{
     padding: 0 40px;
     position: fixed;
     z-index: 999;
+    
 }
 #home .container .icons ion-icon{
     padding: 30px 0;
     font-size: 2rem;
     color: #fff;
     transition: 0.5s ease;
+
 }
 #home .container .icons ion-icon:hover{
     color: #156fc3;
@@ -238,7 +241,7 @@ header .btn-mobile{
     position: absolute;
     z-index: 9;
     color: #fff;
-    font-size: 4rem;
+    font-size: 3rem;
     margin-top: 60px;
 }
 #port .container .card p{
@@ -332,6 +335,48 @@ header .btn-mobile{
     font-size: 1.2rem;
     padding: 5px 0;
 }
+#contact .content-contact .contact-right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+#contact .content-contact .contact-right h1{
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+#contact .content-contact .contact-right input[type=email],
+#contact .content-contact .contact-right input[type=text]{
+    border-radius: 20px;
+    border: none;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    outline: none;
+}
+#contact .content-contact .contact-right textarea{
+    width: 100%;
+    height: 120px;
+    border-radius: 20px;
+    border: none;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    outline: none;
+    padding: 15px 20px;
+}
+
+.myButton{
+    width: 30%;
+    background: rgba(21,111,195,1);
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
 
 /*===== Footer =====*/
 #elden-ring-img{
@@ -354,16 +399,16 @@ footer a{
 }
 
 /*===== Resposive =====*/
-/* 
+
 @media screen and (max-width: 1280px){
     #home .container .icons ion-icon{
         font-size: 1.5rem;
     }
     #port .container .card h1{
-        font-size: 5rem;
+        font-size: 4rem;
     }
     #port .container .card p{
-        width: 280px;
+        width: 350px;
         font-size: 0.8rem;
     }
 }
@@ -499,4 +544,4 @@ footer a{
         width: 60%;
         height: 60%;
     }
-} */
+}
